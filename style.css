@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100%;
+    width:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main{
+    overflow:hidden;
+    background-color:#1137ca;
+}
+.pg1{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+.pg1 video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:15vh;
+    width:100vw;
+    padding:0 5vw;
+    position:absolute;
+}
+.nav .lt-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:97%;
+}
+.nav .lt-nav i{
+    font-size:40px;
+    color:white;
+}
+.nav .lt-nav button{
+    padding:7px 14px;
+    border:1px solid white;
+    background-color:transparent;
+    color:white;
+    font-size:16px;
+    font-weight:400;
+    border-radius:50px;
+    margin-right:4px;
+}
+.nav .rt-nav{
+    border:1px solid white;
+    padding:5px 10px;
+    border-radius:50px;
+}
+.nav .rt-nav i{
+    font-size:20px;
+    color:white;
+}
+.pg1-content{
+    position:absolute;
+    bottom:20%;
+    left:10%;
+}
+.pg1-content h1{
+    font-size:5vw;
+    color:white;
+}
+.pg1-content div{
+    display:flex;
+    align-items:flex-end;
+    gap:2vw;
+    margin-top:5vh;
+}
+.pg1-content div p{
+    width:40%;
+    color:white;
+    line-height:4vh;
+}
+.pg1-content div button{
+    padding:10px 20px;
+    border:none;
+    border-radius:50px;
+    color:dodgerblue;
+}
+.pg2{
+    width:100vw;
+    height:100vh;
+    background-color:#0a3cce;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+    padding:0 10vw;
+    color:white;
+}
+.pg2 h3{
+    margin-bottom:5vw;
+}
+.pg2 h1{
+    width:80%;
+}
+.pg3{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+.pg3 canvas{
+    max-width:100vw;
+    max-height:100vh;
+    position:relative;
+}
+.pg4{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background-color:#1137ca;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+    padding:0 10vw;
+    color:white;
+    font-weight:200;
+}
+.pg4 h3{
+    margin-bottom:5vw;
+}
+.pg4 h1{
+    width:80%;
+}
+.pg5{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+.pg5 canvas{
+    max-width:100vw;
+    max-height:100vh;
+    position:relative;
+}
+.pg6{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background-color:#0a3cce;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+    padding:0 10vw;
+    color:white;
+    font-weight:200;
+}
+.pg6 h3{
+    margin-bottom:5vw;
+}
+.pg6 h1{
+    width:80%;
+}
+.pg7{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    background-color:#1137ca;
+}
+.pg7 .inner-cir{
+    height:60%;
+    width:60%;
+    border:1px solid white;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.pg7 .outer-cir{
+    height:20vw;
+    width:20vw;
+    border:1px solid white;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.pg8{
+    width:100vw;
+    height:60vh;
+    background-color:black;
+    padding:5vw 10vw;
+    color:white;
+}
+.pg8 button{
+    padding:10px 20px;
+    border:none;
+    border-radius:50px;
+    color:dodgerblue;
+    margin-top:3vw;
+}
+.pg9{
+    width:100vw;
+    min-height:40vh;
+    background-color:black;
+}
+.pg9 .elements{
+    border-top:1px solid rgba(255, 255, 255, 0.294);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    padding:3vw;
+    position:relative;
+}
+.pg9 .elements h2{
+    z-index:9;
+}
+.pg9 .elements i{
+    transform:rotate(-45deg);
+    z-index:9;
+}
+.pg9 .elements .overlay{
+    height:0;
+    width:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:#0a3cce;
+    transition:all ease .5s;
+}
+.pg9 .elements:hover .overlay{
+    height:100%;
+}
